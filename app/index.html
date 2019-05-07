@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>LP</title>
+
+    <link href="css/app.css" rel="stylesheet">
+
+</head>
+<body>
+
+<section id="content">
+    <div class="container">
+        <div class="content">
+            <img class="text_header" src="img/text_header.png" alt="">
+            <div class="form-block">
+                <form class="form" style="display: block">
+                    <div class="form__head">Make an order</div>
+                    <div class="form__row">
+                        <input class="form__inp" type="text" name="firstName" placeholder="First name">
+                    </div>
+                    <div class="form__row">
+                        <input class="form__inp" type="text" name="lastName" placeholder="Last name">
+                    </div>
+                    <div class="form__row">
+                        <input class="form__inp" type="text" name="email" placeholder="E-mail">
+                    </div>
+                    <div class="form__row">
+                        <input class="form__inp" type="text" name="phone" placeholder="Phone">
+                    </div>
+                    <div class="form__row">
+                        <input class="form__inp" type="text" name="city" placeholder="City">
+                    </div>
+                    <div class="form__row">
+                        <input class="form__inp" type="text" name="address" placeholder="Address">
+                    </div>
+                    <div class="form__row">
+                        <input class="form__inp only-number" type="text" name="zip" placeholder="ZIP" maxlength="10">
+                    </div>
+                    <label class="agree checkbox" for="agree">
+                        <input class="form__checkbox" type="checkbox" id="agree">
+                        <span></span>
+                        You confirm that you have already reached the age of 18
+                    </label>
+                    <button class="form__btn-submit" type="submit" id="btn-form-submit" disabled>CONTINUE</button>
+                </form>
+
+                <form class="form-payment" style="display: none">
+                    <div class="form-payment__row">
+                        <label class="form-payment__lbl" for="cart-type">Cart type</label>
+                        <input class="form-payment__inp form-payment__inp-cart_type" type="text" name="cartType"
+                               id="cart-type" placeholder="Card type" disabled>
+                    </div>
+                    <div class="form-payment__row">
+                        <label class="form-payment__lbl" for="cart-number">Cart number</label>
+                        <input class="form-payment__inp" type="text" name="cartNumber" id="cart-number"
+                               placeholder="0000 0000 0000 0000">
+                    </div>
+                    <div class="form-payment__row">
+                        <label class="form-payment__lbl" for="expiration-date">Expiration date</label>
+                        <input class="form-payment__inp" type="text" name="expirationDate" id="expiration-date"
+                               placeholder="00/00">
+                    </div>
+                    <div class="form-payment__row">
+                        <label class="form-payment__lbl" for="name">Name</label>
+                        <input class="form-payment__inp" type="text" name="name" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-payment__row">
+                        <label class="form-payment__lbl" for="cvv">CVV</label>
+                        <input class="form-payment__inp only-number" type="text" name="cvv" id="cvv" maxlength="3"
+                               placeholder="000">
+                    </div>
+                    <button class="form-payment__btn-submit" type="submit">Confirm payment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="container">
+
+    </div>
+</footer>
+
+<script src="libs/jquery.min.js"></script>
+<script src="libs/jquery.validate.min.js"></script>
+<script src="libs/jquery.maskedinput.min.js"></script>
+<script src="libs/cleave.min.js"></script>
+<script src="js/error404.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

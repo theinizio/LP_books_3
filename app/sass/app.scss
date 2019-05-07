@@ -1,0 +1,15 @@
+/*-----BOOTSTRAP-----*/
+@import 'bootstrap/functions';
+@import 'bootstrap/variables';
+@import 'bootstrap/mixins';
+@import 'bootstrap/grid';
+
+
+/*-----MAIN-----*/
+@import 'basic';
+@import 'content';
+@import 'footer';
+
+
+/*-----ERROR-----*/
+@import 'error404';
