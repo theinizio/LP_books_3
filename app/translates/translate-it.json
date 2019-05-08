@@ -1,0 +1,30 @@
+{
+  "headerText": "Il nuovo Galaxy è qui",
+  "form": {
+    "title_1": "Colori disponibili",
+    "btnRadio_1": "bianco",
+    "btnRadio_2": "nero",
+    "title_2": "Inserisci i tuoi dettagli qui sotto",
+    "firstName": "nome di battesimo",
+    "lastName": "cognome",
+    "email": "E-mail",
+    "phone": "Telefono",
+    "city": "Città",
+    "address": "Città",
+    "zip": "Codice postale",
+    "agree": "Confermi di aver raggiunto 18 anni",
+    "btnContinue": "Continuare",
+    "cartType": "Tipo di carrello",
+    "cartNumber": "Numero del carrello",
+    "expirationDate": "Data di scadenza",
+    "name": "Nome",
+    "cvv": "cvv",
+    "btnConfirm": "Ordina ora"
+  },
+  "descTitle": "Il set include wireless pare",
+  "descPar": "Cuffie Galaxy Buds Le cuffie Galaxy Buds possono essere facilmente collegate al Galaxy S10 + e utilizzare Bixby per riprodurre musica ed effettuare chiamate senza usare le mani.",
+  "contentTitle": "Display Infinity-O",
+  "contentPar": "Nessuna distorsione grazie al design completamente nuovo del display. Galaxy S10 + introduce un sensazionale display Infinity-O completamente nuovo. Era fatto di vetro immacolato, che avvolge efficacemente i bordi. È minimalista, bello e semplicemente elegante. La mancanza di un pulsante principale e di tacche sul ricevitore e una semplice apertura del punto sulla fotocamera frontale ti forniranno un'immagine indisturbata. È inoltre dotato di un proteggi schermo che lo protegge da piccoli incidenti nella vita di tutti i giorni.",
+  "footerTitle": "Partecipa e vinci il nuovo Samsung Galaxy S10+",
+  "footerDesc": "Tutti i nuovi clienti partecipano alla lotteria, dove puoi vincere il prodotto presentato. Se diventi un fortunato vincitore, ti contatteremo direttamente via e-mail. Questa offerta speciale include un periodo di prova di 6 giorni per il servizio sottoscritto. Dopo questa chat, verrà addebitato automaticamente sulla tua carta di credito un canone mensile di abbonamento (65 euro). Se i nostri servizi non soddisfano le tue aspettative. puoi cancellare il tuo account entro 6 giorni. Il servizio verrà rinnovato ogni mese fino a quando non verrà annullato. Questa campagna scadrà il 31 dicembre 2019."
+}

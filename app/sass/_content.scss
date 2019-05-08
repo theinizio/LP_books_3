@@ -27,11 +27,16 @@
 
   .content {
     .text_header {
-      display: block;
-      width: 100%;
-      max-width: 1360px;
-      padding: 50px 0;
-      margin: 0 auto;
+      font-family: DisplayBold, sans-serif;
+      font-size: 180px;
+      text-align: center;
+      color: #fff;
+      padding: 50px 0 140px;
+
+      &__top {
+        font-family: DisplayBold, sans-serif;
+        font-size: 70px;
+      }
     }
 
     .form {
@@ -277,6 +282,20 @@
 }
 
 
+@media screen and (max-width: 1100px) {
+  #content {
+    .content {
+      .text_header {
+        font-size: 110px;
+
+        &__top {
+          font-size: 45px;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 991px ) {
   #content {
     .content {
@@ -293,9 +312,32 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  #content {
+    .content {
+      .text_header {
+        font-size: 80px;
+
+        &__top {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 575px) {
   #content {
     .content {
+      .text_header {
+        font-size: 45px;
+        padding: 50px 0;
+
+        &__top {
+          font-size: 24px;
+        }
+      }
+
       .form {
         padding: 15px;
 

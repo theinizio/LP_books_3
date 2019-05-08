@@ -1,0 +1,30 @@
+{
+  "headerText": "La nouvelle galaxie est là",
+  "form": {
+    "title_1": "Couleurs disponibles",
+    "btnRadio_1": "blanc",
+    "btnRadio_2": "noir",
+    "title_2": "Entrez vos coordonnées ci-dessous",
+    "firstName": "Prénom",
+    "lastName": "Nom de famille",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "city": "La Ville",
+    "address": "Adresse",
+    "zip": "Code postal",
+    "agree": "Vous confirmez que vous avez atteint l'âge de 18 ans",
+    "btnContinue": "Continuer",
+    "cartType": "Type de chariot",
+    "cartNumber": "Numéro de panier",
+    "expirationDate": "Date d'expiration",
+    "name": "Nom",
+    "cvv": "cvv",
+    "btnConfirm": "Commandez maintenant"
+  },
+  "descTitle": "L'ensemble comprend un pare-fil sans fil",
+  "descPar": "Le casque Galaxy Buds peut être facilement connecté au Galaxy S10 + et utiliser Bixby pour écouter de la musique et passer des appels sans utiliser vos mains.",
+  "contentTitle": "Écran Infinity-O",
+  "contentPar": "Aucune distorsion grâce au tout nouveau design de l'écran. Le Galaxy S10 + présente un tout nouvel écran Infinity-O sensationnel. Il était fait de verre immaculé, qui enveloppe efficacement les bords. C'est minimaliste, beau et simplement élégant. L'absence d'un bouton principal et d'encoches sur le récepteur et une simple ouverture ponctuelle sur la caméra frontale vous fourniront une image non perturbée. Il est également équipé d'un protecteur d'écran qui le protège contre les petits accidents de la vie quotidienne.",
+  "footerTitle": "Participez et gagnez le nouveau Samsung Galaxy S10 +",
+  "footerDesc": "Tous les nouveaux clients participent à la loterie, où vous pouvez gagner le produit présenté. Si vous devenez un heureux gagnant, nous vous contacterons directement par e-mail. Cette offre spéciale comprend une période d'essai de 6 jours pour le service souscrit. Après cette discussion, un abonnement mensuel (65 EUR) sera automatiquement débité de votre carte de crédit. Si nos services ne répondent pas à vos attentes. vous pouvez supprimer votre compte dans les 6 jours. Le service sera renouvelé tous les mois jusqu'à son annulation. Cette campagne expirera le 31 décembre 2019."
+}

@@ -229,4 +229,30 @@ $(document).ready(function () {
         }
     });
 
+
+    // === TRANSLATES === //
+    var language = localStorage.getItem('lang') || 'pl';
+
+    console.log(language);
+
+    var option = document.querySelectorAll('#language option');
+
+    option.forEach(function (el) {
+        if (language === $(el).val()) {
+            $(el).attr('selected', 'selected');
+        }
+    });
+
+    $('#language').on('change', function () {
+        console.log($(this).val());
+        let lang = $(this).val();
+        localStorage.setItem('lang', lang);
+        window.location.reload();
+    });
+
+    $("[data-localize]").localize("translate", {
+        pathPrefix: "./translates",
+        language: language
+    });
+
 });

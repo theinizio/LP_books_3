@@ -1,0 +1,30 @@
+{
+  "headerText": "Nowe Galaxy juz tu jest",
+  "form": {
+    "title_1": "Dostępne kolory",
+    "btnRadio_1": "Biały",
+    "btnRadio_2": "Czarny",
+    "title_2": "Swoje dane wprowadź poniżej:",
+    "firstName": "Imie",
+    "lastName": "Nazwisko",
+    "email": "Adres e-mail",
+    "phone": "Nr telefony",
+    "city": "Miejscowość",
+    "address": "Adres",
+    "zip": "Kod pocztowy",
+    "agree": "Potwierdzasz, że osiągnąłeś już 18 lat",
+    "btnContinue": "Dalej",
+    "cartType": "Typ wózka",
+    "cartNumber": "Numer koszyka",
+    "expirationDate": "Termin ważności",
+    "name": "Imię",
+    "cvv": "cvv",
+    "btnConfirm": "Potwierdź płatność"
+  },
+  "descTitle": "Zestaw obejmuje parę bezprzewodowych",
+  "descPar": "słuchawek Galaxy Buds.Słuchawki Galaxy Buds można z łatwością podłączyć do Galaxy S10+ i korzystać z Bixby w celu odtwarzania muzyki i wykonywania połączeń bez użycia rąk.",
+  "contentTitle": "Wyświetlacz Infinity-O",
+  "contentPar": "Obraz bez żadnych zakłóceń dzięki całkowicie nowemu designowi wyświetlacza. Galaxy S10+ wprowadza rewelacyjny, zupełnie nowy wyświetlacz Infinity-O. Powstał on z nieskazitelnego szkła, które efektownie zawija się na krawędziach. Jest minimalistyczny, piękny i po prostu elegancki. Brak przycisku głównego i wycięcia na odbiornik oraz proste, punktowe otwarcie na kamerę przednią  zapewnią Ci niczym niezakłócony obraz. Wyposażony jest też w osłonę ekranu, która chroni go przed drobnymi wypadkami w życiu codziennym.",
+  "footerTitle": "Weź udział i wygraj nowego Samsung Galaxy S10+",
+  "footerDesc": "Wszyscy nowi klienci biorą udział w loterii, w której można wygrać zaprezentowany produkt. Jeśli okażesz się szczęśliwym zwycięzcą, skontaktujemy się z Tobą bezpośrednio pocztą elektroniczną. Ta oferta specjalna obejmuje trwający 6 dni okres próbny na subskrybowaną usługę. Po tym czasie miesięczna opłata abonamentowa (65 EUR) zostanie automatycznie pobrana z Twojej karty kredytowej.Jeśli nasze usługi nie spełnią Twoich oczekiwań, możesz skasować swoje konto w ciągu 6 dni. Usługa będzie odnawiana co miesiąc, aż zostanie anulowana. Kampania ta wygaśnie 31 grudnia 2019 roku."
+}

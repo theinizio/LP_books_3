@@ -1,6 +1,6 @@
 #footer {
   background-color: #EBEBEB;
-  padding: 100px 0;
+  padding: 50px 0;
   color: rgba(0, 0, 0, .7);
   font-size: 24px;
   text-align: center;
@@ -9,5 +9,10 @@
     width: 100%;
     max-width: 1220px;
     margin: 0 auto;
+
+    h3 {
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
   }
 }
