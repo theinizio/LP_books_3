@@ -84,13 +84,45 @@ input:focus {
     content: '';
     top: 50%;
     transform: translate(-50%, -50%);
-    border: 1px solid #fff;
+    border: 1px solid #000;
     width: 18px;
     height: 18px;
     margin-right: 15px;
   }
 
   input[type=checkbox]:checked + span {
-    background-color: #fff;
+    background-color: #000;
+  }
+}
+
+.btn-radio {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+
+  input[type=radio] {
+    display: none;
+  }
+
+  input[type=radio] + span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #999;
+    border-radius: 20px;
+    transition: all 0.25s linear;
+  }
+
+  input[type=radio]:checked + span {
+    border-color: #0057FF;
   }
 }

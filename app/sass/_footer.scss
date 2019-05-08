@@ -1,18 +1,13 @@
 #footer {
-  padding: 15px 0 30px;
-  color: #fff;
-  font-size: 22px;
-  min-height: 400px;
-}
+  background-color: #EBEBEB;
+  padding: 100px 0;
+  color: rgba(0, 0, 0, .7);
+  font-size: 24px;
+  text-align: center;
 
-@media screen and (max-width: 991px) {
-  #footer {
-
-  }
-}
-
-@media screen and (max-width: 575px) {
-  #footer {
-
+  .footer {
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
