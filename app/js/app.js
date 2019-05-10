@@ -257,13 +257,6 @@ $(document).ready(function () {
         }
     });
 
-    /*$('#language').on('change', function () {
-        console.log($(this).val());
-        let lang = $(this).val();
-        localStorage.setItem('lang', lang);
-        window.location.reload();
-    });*/
-
     $("[data-localize]").localize("translate", {
         pathPrefix: "./translates",
         language: language
