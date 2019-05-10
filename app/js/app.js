@@ -230,25 +230,39 @@ $(document).ready(function () {
     });
 
 
+    // === MENU LANG === //
+    $('.localization .active').on('click', function() {
+        $('.localization .list').toggleClass('open');
+    });
+
+    $('.localization .list li').on('click', function() {
+        let lang = $(this).find('.list__lang').attr('data-lang');
+        localStorage.setItem('lang', lang);
+        window.location.reload();
+    });
+
+
     // === TRANSLATES === //
     var language = localStorage.getItem('lang') || 'pl';
 
     console.log(language);
 
-    var option = document.querySelectorAll('#language option');
+    $('.localization .active').append('<img src="img/language/' + language + '.png" alt=""><span class="active__lang">' + language + '</span>');
+
+    var option = document.querySelectorAll('.localization .list__lang');
 
     option.forEach(function (el) {
-        if (language === $(el).val()) {
-            $(el).attr('selected', 'selected');
+        if (language === $(el).attr('data-lang')) {
+            $(el).parent().addClass('selected');
         }
     });
 
-    $('#language').on('change', function () {
+    /*$('#language').on('change', function () {
         console.log($(this).val());
         let lang = $(this).val();
         localStorage.setItem('lang', lang);
         window.location.reload();
-    });
+    });*/
 
     $("[data-localize]").localize("translate", {
         pathPrefix: "./translates",

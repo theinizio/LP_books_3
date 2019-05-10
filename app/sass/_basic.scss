@@ -128,20 +128,110 @@ input:focus {
 }
 
 
-// === LANGUAGE === //
-.language-block {
+// === LOCALIZATION === //
+.localization {
   position: fixed;
   top: 20px;
   right: 20px;
+  display: inline-block;
+  min-width: 70px;
+  font-size: 16px;
+  text-align: center;
   background-color: #fff;
   padding: 5px;
+  box-shadow: 0 0 5px #000;
   z-index: 9999;
 
-  select {
-    font-size: 20px;
-    font-weight: 600;
-    border: 2px solid #000;
+  .active {
+    display: flex;
+    align-items: center;
+    color: #000;
     cursor: pointer;
+
+    img {
+      display: inline-block;
+      width: 25px;
+      height: 15px;
+      margin-right: 7px;
+      box-shadow: 0 0 3px #777;
+    }
+
+    &__lang {
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    &:after {
+      content: '';
+      position: relative;
+      top: -3px;
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-right: 2px solid #000;
+      border-bottom: 2px solid #000;
+      transform: rotate(45deg);
+      margin-left: 9px;
+    }
+  }
+
+  .list {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s linear;
+    filter: drop-shadow(0 0 4px #000);
+    z-index: 101;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -8px;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid #fff;
+      transform: translateX(-50%);
+    }
+
+    &__lang {
+      font-weight: 600;
+    }
+
+    &.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      cursor: pointer;
+
+      img {
+        display: inline-block;
+        width: 25px;
+        margin-right: 10px;
+      }
+
+      &:hover {
+        color: #fff;
+        background-color: #999;
+      }
+
+      &.selected {
+        background-color: #999;
+      }
+    }
   }
 }
 

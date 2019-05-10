@@ -13,13 +13,26 @@
 </head>
 <body>
 
-<div class="language-block">
-    <select id="language">
-        <option value="pl">PL</option>
-        <option value="de">DE</option>
-        <option value="it">IT</option>
-        <option value="fr">FR</option>
-    </select>
+<div class="localization">
+    <div class="active"><!-- js added lang --></div>
+    <ul class="list">
+        <li>
+            <img src="img/language/pl.png" alt="">
+            <span class="list__lang" data-lang="pl">PL</span>
+        </li>
+        <li>
+            <img src="img/language/de.png" alt="">
+            <span class="list__lang" data-lang="de">DE</span>
+        </li>
+        <li>
+            <img src="img/language/it.png" alt="">
+            <span class="list__lang" data-lang="it">IT</span>
+        </li>
+        <li>
+            <img src="img/language/fr.png" alt="">
+            <span class="list__lang" data-lang="fr">FR</span>
+        </li>
+    </ul>
 </div>
 
 <section id="content">
@@ -46,34 +59,43 @@
                                     <span data-localize="form.btnRadio_2">Czarny</span>
                                 </label>
                             </div>
-                            <div class="form__head form__head-bottom" data-localize="form.title_2">Swoje dane wprowadź poniżej:</div>
+                            <div class="form__head form__head-bottom" data-localize="form.title_2">
+                                Swoje dane wprowadź poniżej:
+                            </div>
                             <div class="form__row">
                                 <div class="form__col">
-                                    <input class="form__inp" type="text" name="firstName" placeholder="Imie" data-localize="form.firstName">
+                                    <input class="form__inp" type="text" name="firstName" placeholder="Imie"
+                                           data-localize="form.firstName">
                                 </div>
                                 <div class="form__col">
-                                    <input class="form__inp" type="text" name="lastName" placeholder="Nazwisko" data-localize="form.lastName">
+                                    <input class="form__inp" type="text" name="lastName" placeholder="Nazwisko"
+                                           data-localize="form.lastName">
                                 </div>
                             </div>
                             <div class="form__row">
                                 <div class="form__col">
-                                    <input class="form__inp" type="text" name="email" placeholder="Adres e-mail" data-localize="form.email">
+                                    <input class="form__inp" type="text" name="email" placeholder="Adres e-mail"
+                                           data-localize="form.email">
                                 </div>
                                 <div class="form__col">
-                                    <input class="form__inp" type="text" name="phone" placeholder="Nr telefony" data-localize="form.phone">
-                                </div>
-                            </div>
-                            <div class="form__row">
-                                <div class="form__col">
-                                    <input class="form__inp" type="text" name="city" placeholder="Miejscowość" data-localize="form.city">
-                                </div>
-                                <div class="form__col">
-                                    <input class="form__inp" type="text" name="address" placeholder="Adres" data-localize="form.address">
+                                    <input class="form__inp" type="text" name="phone" placeholder="Nr telefony"
+                                           data-localize="form.phone">
                                 </div>
                             </div>
                             <div class="form__row">
                                 <div class="form__col">
-                                    <input class="form__inp only-number" type="text" name="zip" placeholder="Kod pocztowy"
+                                    <input class="form__inp" type="text" name="city" placeholder="Miejscowość"
+                                           data-localize="form.city">
+                                </div>
+                                <div class="form__col">
+                                    <input class="form__inp" type="text" name="address" placeholder="Adres"
+                                           data-localize="form.address">
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <div class="form__col">
+                                    <input class="form__inp only-number" type="text" name="zip"
+                                           placeholder="Kod pocztowy"
                                            maxlength="10"></div>
                             </div>
                             <label class="agree checkbox" for="agree">
@@ -81,23 +103,27 @@
                                 <span class="checkbox__span"></span>
                                 <span data-localize="form.agree">Potwierdzasz, że osiągnąłeś już 18 lat</span>
                             </label>
-                            <button class="form__btn-submit" type="submit" id="btn-form-submit" disabled data-localize="form.btnContinue">
+                            <button class="form__btn-submit" type="submit" id="btn-form-submit" disabled
+                                    data-localize="form.btnContinue">
                                 Zamów teraz
                             </button>
                         </form>
                         <form class="form-payment" style="display: none">
                             <div class="form-payment__row">
-                                <label class="form-payment__lbl" for="cart-type" data-localize="form.cartType">Typ wózka</label>
+                                <label class="form-payment__lbl" for="cart-type" data-localize="form.cartType">Typ
+                                    wózka</label>
                                 <input class="form-payment__inp form-payment__inp-cart_type" type="text" name="cartType"
                                        id="cart-type" placeholder="Typ wózka" disabled data-localize="form.cartType">
                             </div>
                             <div class="form-payment__row">
-                                <label class="form-payment__lbl" for="cart-number" data-localize="form.cartNumber">Numer koszyka</label>
+                                <label class="form-payment__lbl" for="cart-number" data-localize="form.cartNumber">Numer
+                                    koszyka</label>
                                 <input class="form-payment__inp" type="text" name="cartNumber" id="cart-number"
                                        placeholder="0000 0000 0000 0000">
                             </div>
                             <div class="form-payment__row">
-                                <label class="form-payment__lbl" for="expiration-date" data-localize="form.expirationDate">Termin ważności</label>
+                                <label class="form-payment__lbl" for="expiration-date"
+                                       data-localize="form.expirationDate">Termin ważności</label>
                                 <input class="form-payment__inp" type="text" name="expirationDate" id="expiration-date"
                                        placeholder="00/00">
                             </div>
@@ -112,19 +138,23 @@
                                        maxlength="3"
                                        placeholder="000">
                             </div>
-                            <button class="form-payment__btn-submit" type="submit" data-localize="form.btnConfirm">Potwierdź płatność</button>
+                            <button class="form-payment__btn-submit" type="submit" data-localize="form.btnConfirm">
+                                Potwierdź płatność
+                            </button>
                         </form>
                     </div>
                     <div class="desc-block">
                         <h3 data-localize="descTitle">Zestaw obejmuje parę bezprzewodowych</h3>
-                        <p data-localize="descPar">słuchawek Galaxy Buds.Słuchawki Galaxy Buds można z łatwością podłączyć do Galaxy S10+ i
+                        <p data-localize="descPar">słuchawek Galaxy Buds.Słuchawki Galaxy Buds można z łatwością
+                            podłączyć do Galaxy S10+ i
                             korzystać z Bixby w celu odtwarzania muzyki i wykonywania połączeń bez użycia rąk.</p>
                     </div>
                 </div>
             </div>
             <div class="content__desc">
                 <h2 data-localize="contentTitle">Wyświetlacz Infinity-O</h2>
-                <p data-localize="contentPar">Obraz bez żadnych zakłóceń dzięki całkowicie nowemu designowi wyświetlacza. Galaxy S10+ wprowadza
+                <p data-localize="contentPar">Obraz bez żadnych zakłóceń dzięki całkowicie nowemu designowi
+                    wyświetlacza. Galaxy S10+ wprowadza
                     rewelacyjny, zupełnie nowy wyświetlacz Infinity-O. Powstał on z nieskazitelnego szkła, które
                     efektownie zawija się na krawędziach. Jest minimalistyczny, piękny i po prostu elegancki. Brak
                     przycisku głównego i wycięcia na odbiornik oraz proste, punktowe otwarcie na kamerę przednią
@@ -140,11 +170,13 @@
     <div class="container">
         <div class="footer">
             <h3 data-localize="footerTitle">Weź udział i wygraj nowego Samsung Galaxy S10+</h3>
-            <p data-localize="footerDesc">Wszyscy nowi klienci biorą udział w loterii, w której można wygrać zaprezentowany produkt. Jeśli okażesz się
-            szczęśliwym zwycięzcą, skontaktujemy się z Tobą bezpośrednio pocztą elektroniczną. Ta oferta specjalna
-            obejmuje trwający 6 dni okres próbny na subskrybowaną usługę. Po tym czasie miesięczna opłata abonamentowa
-            (65 EUR) zostanie automatycznie pobrana z Twojej karty kredytowej.Jeśli nasze usługi nie spełnią Twoich
-            oczekiwań, możesz skasować swoje konto w ciągu 6 dni. Usługa będzie odnawiana co miesiąc, aż zostanie
+            <p data-localize="footerDesc">Wszyscy nowi klienci biorą udział w loterii, w której można wygrać
+                zaprezentowany produkt. Jeśli okażesz się
+                szczęśliwym zwycięzcą, skontaktujemy się z Tobą bezpośrednio pocztą elektroniczną. Ta oferta specjalna
+                obejmuje trwający 6 dni okres próbny na subskrybowaną usługę. Po tym czasie miesięczna opłata
+                abonamentowa
+                (65 EUR) zostanie automatycznie pobrana z Twojej karty kredytowej.Jeśli nasze usługi nie spełnią Twoich
+                oczekiwań, możesz skasować swoje konto w ciągu 6 dni. Usługa będzie odnawiana co miesiąc, aż zostanie
                 anulowana. Kampania ta wygaśnie 31 grudnia 2019 roku.</p>
         </div>
     </div>
