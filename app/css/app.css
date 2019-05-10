@@ -1192,12 +1192,20 @@ input:focus {
       -webkit-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
               transform: rotate(45deg);
-      margin-left: 9px; }
+      margin-left: 9px;
+      -webkit-transition: all .1s linear;
+      -o-transition: all .1s linear;
+      transition: all .1s linear; }
+    .localization .active.rotate:after {
+      top: 2px;
+      -webkit-transform: rotate(225deg);
+          -ms-transform: rotate(225deg);
+              transform: rotate(225deg); }
   .localization .list {
     display: block;
     width: 100%;
     position: absolute;
-    top: 35px;
+    top: 38px;
     left: 0;
     background-color: #fff;
     opacity: 0;
@@ -1272,6 +1280,61 @@ input:focus {
     background: url(../img/phone.png) no-repeat;
     -webkit-background-size: contain;
             background-size: contain; }
+  #content .price-block {
+    display: block;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    max-width: 720px;
+    height: 870px;
+    z-index: 2; }
+    #content .price-block .price {
+      display: block;
+      position: absolute;
+      top: 35%;
+      left: 60%;
+      width: 270px;
+      height: 270px;
+      border: 10px solid #fff;
+      -webkit-border-radius: 50% 50% 50% 8%;
+              border-radius: 50% 50% 50% 8%;
+      background-color: #4582F9;
+      color: #fff;
+      font-size: 24px;
+      padding: 45px 0;
+      text-align: center;
+      -webkit-box-shadow: 0 14px 14px rgba(0, 0, 0, 0.25);
+              box-shadow: 0 14px 14px rgba(0, 0, 0, 0.25); }
+      #content .price-block .price__title {
+        display: block;
+        text-align: right;
+        padding-right: 40px; }
+      #content .price-block .price__num {
+        display: block;
+        font-family: DisplayBold, sans-serif;
+        font-size: 75px;
+        margin: 10px 0; }
+        #content .price-block .price__num-line {
+          display: block;
+          position: relative;
+          font-size: 40px;
+          text-align: left;
+          padding-left: 25px; }
+          #content .price-block .price__num-line:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 25px;
+            left: 15px;
+            width: 70%;
+            height: 2px;
+            background-color: #000;
+            z-index: 2; }
+        #content .price-block .price__num-up {
+          position: relative;
+          top: -10px;
+          font-size: 26px; }
   #content .content .text_header {
     font-family: DisplayBold, sans-serif;
     font-size: 180px;
@@ -1363,7 +1426,7 @@ input:focus {
       background: #4582F9;
       color: #fff;
       text-align: center;
-      font-size: 30px;
+      font-size: 26px;
       font-weight: 600;
       outline: none;
       border: 2px solid #4582F9;
@@ -1377,7 +1440,7 @@ input:focus {
         background: transparent;
         color: #000; }
   #content .content .form-payment {
-    display: block;
+    display: none;
     width: 100%;
     max-width: 620px;
     background-color: #fff;
@@ -1434,7 +1497,7 @@ input:focus {
       background: #4582F9;
       color: #fff;
       text-align: center;
-      font-size: 30px;
+      font-size: 26px;
       font-weight: 600;
       outline: none;
       border: 2px solid #4582F9;

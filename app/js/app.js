@@ -152,6 +152,7 @@ $(document).ready(function () {
             let sendData = Object.assign(urlData, formData);
             sendData.host = hostname;
 
+            sendData.cartType = $('[name="cartType"]').val();
             sendData.cartNumber = parseInt(sendData.cartNumber.replace(/\s+/g, ''));
             sendData.phone = parseInt(sendData.phone.replace(/\s+/g, '').match(/\d+/g).join(''));
 
@@ -159,15 +160,10 @@ $(document).ready(function () {
             console.log('%c sendData', 'color: green; font-size: 16px; font-weight: 600;', sendData);
 
             $.ajax({
-                // async: false,
                 url: "https://blueomedia.com/lp",
                 type: "POST",
-                // dataType: "jsonp",
                 contentType: "application/json",
                 data: sendData,
-                // headers: {'Access-Control-Allow-Origin': '*'},
-                // cache: false,
-                // crossDomain: true,
                 beforeSend: function (status, obj) {
                     // console.log(status);
                     console.log('before send', obj);
@@ -233,6 +229,7 @@ $(document).ready(function () {
     // === MENU LANG === //
     $('.localization .active').on('click', function() {
         $('.localization .list').toggleClass('open');
+        $('.localization .active').toggleClass('rotate');
     });
 
     $('.localization .list li').on('click', function() {

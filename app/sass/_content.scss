@@ -25,6 +25,73 @@
     background-size: contain;
   }
 
+  .price-block {
+    display: block;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    max-width: 720px;
+    height: 870px;
+    z-index: 2;
+
+    .price {
+      display: block;
+      position: absolute;
+      top: 35%;
+      left: 60%;
+      width: 270px;
+      height: 270px;
+      border: 10px solid #fff;
+      border-radius: 50% 50% 50% 8%;
+      background-color: #4582F9;
+      color: #fff;
+      font-size: 24px;
+      padding: 45px 0;
+      text-align: center;
+      box-shadow: 0 14px 14px rgba(0, 0, 0, 0.25);
+
+      &__title {
+        display: block;
+        text-align: right;
+        padding-right: 40px;
+      }
+
+      &__num {
+        display: block;
+        font-family: DisplayBold, sans-serif;
+        font-size: 75px;
+        margin: 10px 0;
+
+        &-line {
+          display: block;
+          position: relative;
+          font-size: 40px;
+          text-align: left;
+          padding-left: 25px;
+
+          &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 25px;
+            left: 15px;
+            width: 70%;
+            height: 2px;
+            background-color: #000;
+            z-index: 2;
+          }
+        }
+
+        &-up {
+          position: relative;
+          top: -10px;
+          font-size: 26px;
+        }
+      }
+    }
+  }
+
   .content {
     .text_header {
       font-family: DisplayBold, sans-serif;
@@ -133,7 +200,7 @@
         background: #4582F9;
         color: #fff;
         text-align: center;
-        font-size: 30px;
+        font-size: 26px;
         font-weight: 600;
         outline: none;
         border: 2px solid #4582F9;
@@ -149,7 +216,7 @@
     }
 
     .form-payment {
-      display: block;
+      display: none;
       width: 100%;
       max-width: 620px;
       background-color: #fff;
@@ -212,7 +279,7 @@
         background: #4582F9;
         color: #fff;
         text-align: center;
-        font-size: 30px;
+        font-size: 26px;
         font-weight: 600;
         outline: none;
         border: 2px solid #4582F9;

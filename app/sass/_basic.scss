@@ -172,6 +172,12 @@ input:focus {
       border-bottom: 2px solid #000;
       transform: rotate(45deg);
       margin-left: 9px;
+      transition: all .1s linear;
+    }
+
+    &.rotate:after {
+      top: 2px;
+      transform: rotate(225deg);
     }
   }
 
@@ -179,7 +185,7 @@ input:focus {
     display: block;
     width: 100%;
     position: absolute;
-    top: 35px;
+    top: 38px;
     left: 0;
     background-color: #fff;
     opacity: 0;
