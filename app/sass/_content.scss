@@ -168,6 +168,11 @@
           border-color: red;
           color: red;
         }
+
+        &.inp-valid {
+          color: #63D57A;
+          border-color: #63D57A;
+        }
       }
 
       label.error {
@@ -178,14 +183,14 @@
         color: red;
       }
 
-      .agree {
-        display: flex;
-        align-items: center;
-        margin-top: 10px;
-        color: #000;
-        font-size: 18px;
-        cursor: pointer;
-      }
+      //.agree {
+      //  display: flex;
+      //  align-items: center;
+      //  margin-top: 10px;
+      //  color: #000;
+      //  font-size: 18px;
+      //  cursor: pointer;
+      //}
 
       &__checkbox {
         margin-right: 5px;
@@ -252,13 +257,35 @@
         font-size: 20px;
         color: #000;
 
-        &-cart_type {
-          text-transform: uppercase;
+        &-card {
+          width: 220px;
         }
 
         &.error {
           border-color: red;
           color: red;
+        }
+
+        &.inp-valid {
+          color: #63D57A;
+          border-color: #63D57A;
+        }
+      }
+
+      &__card-block {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+      }
+
+      &__card-type {
+        display: inline-block;
+        width: 50px;
+        min-width: 50px;
+        margin-left: 5px;
+
+        img {
+          width: 100%;
         }
       }
 
@@ -381,6 +408,12 @@
 
 @media screen and (max-width: 767px) {
   #content {
+    .price-block {
+      .price {
+        left: auto;
+        right: 0;
+      }
+    }
     .content {
       .text_header {
         font-size: 80px;
@@ -412,6 +445,10 @@
           flex-direction: column;
         }
 
+        &__inp {
+          font-size: 18px;
+        }
+
         &__col:first-child {
           margin-bottom: 5px;
           padding-bottom: 20px;
@@ -428,6 +465,10 @@
         &__lbl {
           width: 100%;
           margin-bottom: 5px;
+        }
+
+        &__inp {
+          font-size: 18px;
         }
 
         label.error {

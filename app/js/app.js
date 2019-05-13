@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    var cardType = '';
+
     $(".menu-icon").on('click', function () {
         $(this).toggleClass("effect1");
         $('.header__list').toggleClass('menu-active');
@@ -70,15 +72,19 @@ $(document).ready(function () {
                 required: 'The ZIP field is required.'
             }
         },
+        validClass: 'inp-valid',
         submitHandler: function () {
             $('.form').hide();
             $('.form-payment').show();
+            let firstName = $('[name="firstName"]').val();
+            let lastName = $('[name="lastName"]').val();
+            $('[name="name"]').val(firstName + ' ' + lastName);
         }
     });
 
     $('.form-payment').validate({
         rules: {
-            cartNumber: {
+            cardNumber: {
                 required: true,
                 minlength: 15,
                 normalizer: function (value) {
@@ -99,9 +105,9 @@ $(document).ready(function () {
             }
         },
         messages: {
-            cartNumber: {
-                required: "The Cart number field is required.",
-                minlength: "The Cart number field must be at least 15 characters."
+            cardNumber: {
+                required: "The Card number field is required.",
+                minlength: "The Card number field must be at least 15 characters."
             },
             expirationDate: {
                 required: 'The Expiration date field must be at least 4 characters.'
@@ -113,6 +119,7 @@ $(document).ready(function () {
                 required: 'The cvv field must be at least 3 characters.'
             }
         },
+        validClass: 'inp-valid',
         submitHandler: function () {
 
             let formData = {};
@@ -152,8 +159,8 @@ $(document).ready(function () {
             let sendData = Object.assign(urlData, formData);
             sendData.host = hostname;
 
-            sendData.cartType = $('[name="cartType"]').val();
-            sendData.cartNumber = parseInt(sendData.cartNumber.replace(/\s+/g, ''));
+            sendData.cardType = cardType;
+            sendData.cardNumber = parseInt(sendData.cardNumber.replace(/\s+/g, ''));
             sendData.phone = parseInt(sendData.phone.replace(/\s+/g, '').match(/\d+/g).join(''));
 
 
@@ -191,24 +198,23 @@ $(document).ready(function () {
         datePattern: ['m', 'y']
     });
 
-    var cartNumber = new Cleave('[name="cartNumber"]', {
+    var cartNumber = new Cleave('[name="cardNumber"]', {
         creditCard: true,
         onCreditCardTypeChanged: function (type) {
             // console.log(type);
+            $('#card-type').attr('src', 'img/credit_card/' + type + '.png');
+            cardType = type;
             if (type === 'unknown') {
-                $('[name="cartType"]').val('');
                 $('[name="cvv"]').attr({
                     maxlength: 3,
                     placeholder: '000',
                 }).val('');
             } else if (type === 'amex') {
-                $('[name="cartType"]').val(type);
                 $('[name="cvv"]').attr({
                     maxlength: 4,
                     placeholder: '0000',
                 }).val('');
             } else {
-                $('[name="cartType"]').val(type);
                 $('[name="cvv"]').attr({
                     maxlength: 3,
                     placeholder: '000',
@@ -227,36 +233,36 @@ $(document).ready(function () {
 
 
     // === MENU LANG === //
-    $('.localization .active').on('click', function() {
-        $('.localization .list').toggleClass('open');
-        $('.localization .active').toggleClass('rotate');
-    });
-
-    $('.localization .list li').on('click', function() {
-        let lang = $(this).find('.list__lang').attr('data-lang');
-        localStorage.setItem('lang', lang);
-        window.location.reload();
-    });
+    // $('.localization .active').on('click', function() {
+    //     $('.localization .list').toggleClass('open');
+    //     $('.localization .active').toggleClass('rotate');
+    // });
+    //
+    // $('.localization .list li').on('click', function() {
+    //     let lang = $(this).find('.list__lang').attr('data-lang');
+    //     localStorage.setItem('lang', lang);
+    //     window.location.reload();
+    // });
 
 
     // === TRANSLATES === //
-    var language = localStorage.getItem('lang') || 'pl';
-
-    console.log(language);
-
-    $('.localization .active').append('<img src="img/language/' + language + '.png" alt=""><span class="active__lang">' + language + '</span>');
-
-    var option = document.querySelectorAll('.localization .list__lang');
-
-    option.forEach(function (el) {
-        if (language === $(el).attr('data-lang')) {
-            $(el).parent().addClass('selected');
-        }
-    });
-
-    $("[data-localize]").localize("translate", {
-        pathPrefix: "./translates",
-        language: language
-    });
+    // var language = localStorage.getItem('lang') || 'pl';
+    //
+    // console.log(language);
+    //
+    // $('.localization .active').append('<img src="img/language/' + language + '.png" alt=""><span class="active__lang">' + language + '</span>');
+    //
+    // var option = document.querySelectorAll('.localization .list__lang');
+    //
+    // option.forEach(function (el) {
+    //     if (language === $(el).attr('data-lang')) {
+    //         $(el).parent().addClass('selected');
+    //     }
+    // });
+    //
+    // $("[data-localize]").localize("translate", {
+    //     pathPrefix: "./translates",
+    //     language: language
+    // });
 
 });

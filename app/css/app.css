@@ -1396,25 +1396,15 @@ input:focus {
       #content .content .form__inp.error {
         border-color: red;
         color: red; }
+      #content .content .form__inp.inp-valid {
+        color: #63D57A;
+        border-color: #63D57A; }
     #content .content .form label.error {
       position: absolute;
       top: 42px;
       right: 0;
       font-size: 14px;
       color: red; }
-    #content .content .form .agree {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      margin-top: 10px;
-      color: #000;
-      font-size: 18px;
-      cursor: pointer; }
     #content .content .form__checkbox {
       margin-right: 5px; }
     #content .content .form__btn-submit {
@@ -1477,11 +1467,31 @@ input:focus {
       font-family: DisplayLight, sans-serif;
       font-size: 20px;
       color: #000; }
-      #content .content .form-payment__inp-cart_type {
-        text-transform: uppercase; }
+      #content .content .form-payment__inp-card {
+        width: 220px; }
       #content .content .form-payment__inp.error {
         border-color: red;
         color: red; }
+      #content .content .form-payment__inp.inp-valid {
+        color: #63D57A;
+        border-color: #63D57A; }
+    #content .content .form-payment__card-block {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+      -webkit-align-items: flex-end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      width: 100%; }
+    #content .content .form-payment__card-type {
+      display: inline-block;
+      width: 50px;
+      min-width: 50px;
+      margin-left: 5px; }
+      #content .content .form-payment__card-type img {
+        width: 100%; }
     #content .content .form-payment label.error {
       position: absolute;
       top: 42px;
@@ -1563,6 +1573,9 @@ input:focus {
     font-size: 24px; } }
 
 @media screen and (max-width: 767px) {
+  #content .price-block .price {
+    left: auto;
+    right: 0; }
   #content .content .text_header {
     font-size: 80px; }
     #content .content .text_header__top {
@@ -1582,6 +1595,8 @@ input:focus {
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column; }
+    #content .content .form__inp {
+      font-size: 18px; }
     #content .content .form__col:first-child {
       margin-bottom: 5px;
       padding-bottom: 20px; }
@@ -1596,6 +1611,8 @@ input:focus {
     #content .content .form-payment__lbl {
       width: 100%;
       margin-bottom: 5px; }
+    #content .content .form-payment__inp {
+      font-size: 18px; }
     #content .content .form-payment label.error {
       top: 70px; }
     #content .content .form-payment__btn-submit {
